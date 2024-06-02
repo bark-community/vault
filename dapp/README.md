@@ -1,7 +1,6 @@
-# BARK | Anti-Bot & Vault Monorepo
-Proof of Concept
+# BARK | Anti-Bot dApp
 
-Welcome to BARK | Anti-Bot, the Solana Token with an Anti-Bot Decetralized Application. This application allows you to generate a SPL token on the Solana blockchain with an integrated anti-bot mechanism to ensure a fair token launch and distribution.
+Welcome to BARK | Anti-Bot, the Solana Token with an Anti-Bot Application. This application allows you to generate a SPL token on the Solana blockchain with an integrated anti-bot mechanism to ensure a fair token launch and distribution.
 
 ## Table of Contents
 
@@ -21,7 +20,11 @@ Welcome to BARK | Anti-Bot, the Solana Token with an Anti-Bot Decetralized Appli
 
 BARK | Anti-Bot aims to create a fair token launch mechanism on the Solana blockchain by implementing an anti-bot vault. This ensures that genuine supporters have an equal opportunity to participate and prevents unfair advantages by bots.
 
-## Features:
+## Framework
+
+Next.js, react
+
+## Features
 
 - **Solana Token Generator**: Easily generate and deploy your custom token on the Solana blockchain.
 - **Solana Anti-Bot Mechanism**: Integrate anti-bot protection to ensure fair token distribution.
@@ -132,14 +135,6 @@ Before you begin, ensure you have met the following requirements:
 
 Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for details on the code of conduct and the process for submitting pull requests.
 
-## Resources
-
-https://solana.com/developers/guides/getstarted/setup-local-development
-
-https://crates.io/crates/spl-token-2022
-
-https://ui.shadcn.com/docs
-
 ## License
 
-MIT License. See the [LICENSE](LICENSE)
+MIT License. See the [LICENSE](LICENSE) file for more details.
