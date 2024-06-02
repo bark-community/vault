@@ -2,33 +2,31 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+    <main className="flex flex-col min-h-screen items-center justify-between p-6 lg:p-24">
+      <header className="w-full max-w-6xl flex flex-col items-center justify-between font-mono text-sm lg:flex-row lg:items-center lg:justify-between">
+        <p className="flex w-full justify-center lg:w-auto lg:justify-start border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 lg:border lg:bg-gray-200 lg:p-4 dark:border-neutral-800 dark:bg-zinc-800/30 lg:dark:bg-zinc-800/30 backdrop-blur-2xl">
           Anti-Bot Application&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
+          <code className="font-bold">src/app/page.tsx</code>
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" BARK Protocol "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+        <a
+          className="flex items-center gap-2 p-8 lg:p-0"
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          By BARK Protocol
+          <Image
+            src="/vercel.svg"
+            alt="Vercel Logo"
+            className="dark:invert"
+            width={100}
+            height={24}
+            priority
+          />
+        </a>
+      </header>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
+      <section className="relative flex items-center my-16 lg:my-32">
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/next.svg"
@@ -37,77 +35,53 @@ export default function Home() {
           height={37}
           priority
         />
-      </div>
+        <div className="absolute h-[300px] w-full -translate-x-1/2 bg-gradient-radial from-white to-transparent blur-2xl dark:bg-gradient-to-br dark:from-transparent dark:to-blue-700 dark:opacity-10 sm:w-[480px] lg:h-[360px]" />
+        <div className="absolute h-[180px] w-full translate-x-1/3 bg-gradient-conic from-sky-200 via-blue-200 blur-2xl dark:from-sky-900 dark:via-[#0141ff] dark:opacity-40 sm:w-[240px]" />
+      </section>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
+      <section className="grid text-center lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left gap-8 mb-32 lg:mb-0">
+        <Card
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Welcome to the Solana Token with Anti-Bot. Generate a token on the Solana blockchain with an integrated anti-bot mechanism to ensure a fair token launch and distribution.
-          </p>
-        </a>
-
-        <a
+          title="Docs"
+          description="Welcome to the Solana Token with Anti-Bot. Generate a token on the Solana blockchain with an integrated anti-bot mechanism to ensure a fair token launch and distribution."
+        />
+        <Card
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
+          title="Learn"
+          description="Learn about Next.js in an interactive course with quizzes!"
+        />
+        <Card
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Anti-Bot{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Anti-Bot, the Solana Token with an Anti-Bot mechanism. This application allows you to generate a token on the Solana blockchain with an integrated anti-bot mechanism to ensure a fair token launch and distribution.
-          </p>
-        </a>
-
-        <a
+          title="Anti-Bot"
+          description="Anti-Bot, the Solana Token with an Anti-Bot mechanism. This application allows you to generate a token on the Solana blockchain with an integrated anti-bot mechanism to ensure a fair token launch and distribution."
+        />
+        <Card
           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Welcome to the Solana Token with Anti-Bot. Generate a token on the Solana blockchain with an integrated anti-bot mechanism to ensure a fair token launch and distribution.
-          </p>
-        </a>
-      </div>
+          title="Deploy"
+          description="Welcome to the Solana Token with Anti-Bot. Generate a token on the Solana blockchain with an integrated anti-bot mechanism to ensure a fair token launch and distribution."
+        />
+      </section>
     </main>
+  );
+}
+
+function Card({ href, title, description }) {
+  return (
+    <a
+      href={href}
+      className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 dark:hover:border-neutral-700 dark:hover:bg-neutral-800/30 shadow-md hover:shadow-lg"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <h2 className="mb-3 text-2xl font-semibold">
+        {title}{" "}
+        <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+          -&gt;
+        </span>
+      </h2>
+      <p className="m-0 max-w-[30ch] text-sm opacity-75">
+        {description}
+      </p>
+    </a>
   );
 }
