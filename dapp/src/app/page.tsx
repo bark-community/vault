@@ -104,7 +104,7 @@ export default function Home() {
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-          Welcome to the Solana Token with Anti-Bot. Generate a token on the Solana blockchain with an integrated anti-bot mechanism to ensure a fair token launch and distribution.
+            Welcome to the Solana Token with Anti-Bot. Generate a token on the Solana blockchain with an integrated anti-bot mechanism to ensure a fair token launch and distribution.
           </p>
         </a>
       </div>
